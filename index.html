@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>El Quebracho | Materiales rurales y construcción en Olavarría</title>
+  <meta name="description" content="Materiales rurales, construcción y fabricación a medida en Olavarría. Dos sucursales: Circunvalación 1700 y Pellegrini 2860.">
+  <meta name="theme-color" content="#1C1612">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:title" content="El Quebracho | Materiales rurales y construcción">
+  <meta property="og:description" content="Materiales rurales, construcción y fabricación a medida en Olavarría.">
+  <meta property="og:image" content="/og-el-quebracho.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/barlow-condensed-latin-600-normal.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/ibm-plex-sans-latin-400-normal.woff2" crossorigin>
+  <link rel="preload" as="image" type="image/avif" media="(max-width: 767px)" imagesrcset="/img/inicio-m-480.avif 480w, /img/inicio-m-720.avif 720w, /img/inicio-m-960.avif 960w" imagesizes="100vw" fetchpriority="high">
+  <link rel="preload" as="image" type="image/avif" media="(min-width: 768px)" imagesrcset="/img/inicio-800.avif 800w, /img/inicio-1280.avif 1280w, /img/inicio-1920.avif 1920w" imagesizes="100vw" fetchpriority="high">
+  <script>
+    // Marca JS activo y decide si mostrar la precarga (solo primera visita, sin movimiento reducido)
+    (function () {
+      var d = document.documentElement; d.classList.add('js');
+      try {
+        var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (!reduce && !sessionStorage.getItem('eq-visto') && !localStorage.getItem('eq-visto')) d.classList.add('con-precarga');
+        localStorage.setItem('eq-visto', '1');
+      } catch (e) {}
+    })();
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "HardwareStore",
+        "@id": "#circunvalacion",
+        "name": "El Quebracho - Sucursal Circunvalación",
+        "description": "Materiales rurales y de construcción",
+        "address": { "@type": "PostalAddress", "streetAddress": "Circunvalación 1700", "addressLocality": "Olavarría", "addressRegion": "Buenos Aires", "addressCountry": "AR" },
+        "telephone": "+54 2284 602193",
+        "sameAs": ["https://www.instagram.com/elquebracho.materialesrurales/"],
+        "openingHoursSpecification": [
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "07:30", "closes": "16:00" },
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "07:30", "closes": "12:00" }
+        ]
+      },
+      {
+        "@type": "HardwareStore",
+        "@id": "#pellegrini",
+        "name": "El Quebracho - Sucursal Pellegrini",
+        "description": "Materiales rurales y de construcción",
+        "address": { "@type": "PostalAddress", "streetAddress": "Pellegrini 2860", "addressLocality": "Olavarría", "addressRegion": "Buenos Aires", "addressCountry": "AR" },
+        "telephone": ["+54 2284 633218", "+54 2284 602193"],
+        "sameAs": ["https://www.instagram.com/elquebracho.materialesrurales/"],
+        "openingHoursSpecification": [
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "07:30", "closes": "16:00" },
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "07:30", "closes": "12:00" }
+        ]
+      }
+    ]
+  }
+  </script>
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body>
+  <!-- Íconos propios -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-flecha" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="square"/></symbol>
+    <symbol id="i-flecha-abajo" viewBox="0 0 24 24"><path d="M12 4v15M6 13l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="square"/></symbol>
+    <symbol id="i-mas" viewBox="0 0 24 24"><path d="M12 4v16M4 12h16" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-6.2-6.5-11.2a6.5 6.5 0 0 1 13 0C18.5 14.8 12 21 12 21Z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="9.8" r="2.3" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+    <symbol id="i-tel" viewBox="0 0 24 24"><path d="M5 3.5h3.6l1.6 4.3-2.3 1.5a11 11 0 0 0 6.8 6.8l1.5-2.3 4.3 1.6V19a1.5 1.5 0 0 1-1.6 1.5C10.6 20 4 13.4 3.5 5.1A1.5 1.5 0 0 1 5 3.5Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="i-reloj" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 7.5V12l3 2" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+    <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 3.2a8.8 8.8 0 0 0-7.6 13.2L3.2 20.8l4.5-1.2A8.8 8.8 0 1 0 12 3.2Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M8.9 7.9c.2-.4.5-.4.8-.4h.5c.2 0 .4.1.5.4l.7 1.7c.1.2 0 .5-.1.7l-.5.6c-.1.1-.1.3 0 .5.6 1 1.5 1.9 2.6 2.5.2.1.4.1.5 0l.6-.7c.2-.2.4-.2.6-.1l1.7.8c.2.1.4.3.3.5 0 .5-.2 1.1-.6 1.4-.5.4-1.2.6-1.9.5-2.9-.5-5.4-3-6-5.8-.1-.7.1-1.4.5-1.9Z" fill="currentColor"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h12" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+    <symbol id="i-cerrar" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+    <symbol id="i-arbol" viewBox="0 0 24 32"><path d="M12 1 3 9v22h18V9L12 1Zm0 3.2 6 5.4V29h-4.5V17.5L16 15l-1.4-1.4-2.6 2.6-2.6-2.6L8 15l2.5 2.5V29H6V9.6l6-5.4Z" fill="currentColor"/></symbol>
+  </svg>
+
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <!-- Precarga: solo primera visita (ver script en head) -->
+  <div class="precarga" aria-hidden="true">
+    <div class="precarga__cortina precarga__cortina--arriba"><span>El&nbsp;Quebracho</span></div>
+    <div class="precarga__cortina precarga__cortina--abajo"><span>El&nbsp;Quebracho</span></div>
+  </div>
+
+  <div class="progreso" aria-hidden="true"><span></span></div>
+  <div class="terreno" aria-hidden="true"></div>
+
+  <header class="cabecera" data-cabecera>
+    <div class="cabecera__fila">
+      <a class="marca" href="#inicio" aria-label="El Quebracho, ir al inicio">
+        <svg class="marca__icono" aria-hidden="true"><use href="#i-arbol"/></svg>
+        <span class="marca__nombre">El Quebracho</span>
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a class="enlace" href="#campo-seccion">El Campo</a>
+        <a class="enlace" href="#catalogo-construccion">Construcción</a>
+        <a class="enlace" href="#empresa">Empresa</a>
+        <a class="enlace" href="#sucursales">Sucursales</a>
+      </nav>
+      <a class="boton boton--senal boton--chico cabecera__wa" href="https://wa.me/5492284602193?text=Hola%2C%20quer%C3%ADa%20consultar%20por%20un%20proyecto%20para%20el%20campo%20o%20construcci%C3%B3n" target="_blank" rel="noopener noreferrer">
+        <svg class="icono" aria-hidden="true"><use href="#i-wa"/></svg><span>WhatsApp</span>
+      </a>
+      <button class="cabecera__menu" type="button" aria-expanded="false" aria-controls="menu-movil" data-menu-abrir>
+        <svg class="icono" aria-hidden="true"><use href="#i-menu"/></svg><span class="sr">Abrir menú</span>
+      </button>
+    </div>
+  </header>
+
+  <div class="menu-movil" id="menu-movil" role="dialog" aria-modal="true" aria-label="Menú" hidden>
+    <div class="menu-movil__barra">
+      <span class="marca__nombre">El Quebracho</span>
+      <button class="cabecera__menu" type="button" data-menu-cerrar>
+        <svg class="icono" aria-hidden="true"><use href="#i-cerrar"/></svg><span class="sr">Cerrar menú</span>
+      </button>
+    </div>
+    <nav class="menu-movil__nav" aria-label="Menú principal">
+      <a href="#campo-seccion">El Campo</a>
+      <a href="#catalogo-construccion">Construcción</a>
+      <a href="#empresa">Empresa</a>
+      <a href="#sucursales">Sucursales</a>
+    </nav>
+    <div class="menu-movil__pie">
+      <a class="boton boton--senal boton--ancho" href="https://wa.me/5492284602193?text=Hola,%20quisiera%20hacer%20una%20consulta%20directa" target="_blank" rel="noopener noreferrer">
+        <svg class="icono" aria-hidden="true"><use href="#i-wa"/></svg><span>Chatear por WhatsApp</span>
+      </a>
+    </div>
+  </div>
+
+  <main id="contenido" tabindex="-1">
+
+    <!-- Inicio + Dos mundos: el inicio queda fijo atrás y Dos mundos entra encima -->
+    <div class="tramo-inicio">
+    <section class="inicio superficie" id="inicio" data-terreno="tierra" aria-labelledby="titulo-inicio">
+      <div class="inicio__foto" data-inicio-foto>
+        <foto nombre="inicio" alt="Corrales de madera en el campo pampeano al amanecer" sizes="100vw" prioridad />
+      </div>
+      <div class="inicio__velo"></div>
+      <div class="inicio__sombra" data-inicio-sombra></div>
+      <div class="inicio__contenido envoltura">
+        <div data-inicio-texto>
+          <h1 class="inicio__titulo" id="titulo-inicio">Soluciones que hacen crecer tus proyectos.</h1>
+          <p class="inicio__bajada">Materiales rurales, construcción y fabricación a medida. Acompañamos cada etapa con insumos resistentes y soluciones pensadas para el trabajo real.</p>
+          <div class="acciones">
+            <a class="boton boton--senal magnetico" href="https://wa.me/5492284602193?text=Hola%2C%20quer%C3%ADa%20consultar%20por%20sus%20productos%20y%20servicios" target="_blank" rel="noopener noreferrer">
+              <svg class="icono" aria-hidden="true"><use href="#i-wa"/></svg><span>Escribinos por WhatsApp</span>
+            </a>
+            <a class="boton boton--linea" href="#dos-mundos">
+              <span>Conocé nuestras soluciones</span><svg class="icono" aria-hidden="true"><use href="#i-flecha-abajo"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="datos-caja" data-inicio-datos>
+          <dl class="datos">
+            <div><dt>Sedes en Olavarría</dt><dd>2</dd></div>
+            <!-- VALIDAR: "+40 años en el rubro" (claim comercial preexistente) -->
+            <div><dt>Años en el rubro</dt><dd>+40</dd></div>
+          </dl>
+          <!-- VALIDAR: "100% atención directa" (claim comercial preexistente; con menos peso visual a pedido de la revisión) -->
+          <p class="datos__lugar">Olavarría · Buenos Aires · 100% atención directa</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DOS MUNDOS ============ -->
+    <section class="mundos superficie" id="dos-mundos" data-terreno="tierra" data-solida aria-labelledby="titulo-dos-mundos">
+      <div class="mundos__intro envoltura">
+        <h2 class="titulo-seccion" id="titulo-dos-mundos">Dos mundos.<br>Una misma forma de trabajar.</h2>
+        <p class="bajada">Soluciones para quienes producen, construyen y hacen que las cosas sucedan. Con el pulso puesto en el trabajo pampeano y la precisión técnica de obra.</p>
+      </div>
+      <div class="paneles" data-paneles>
+        <a class="panel" id="campo" href="#campo-seccion" data-cursor="Ver">
+          <foto nombre="mundo-campo" alt="Peones trabajando hacienda en un corral de madera" sizes="(min-width: 768px) 62vw, 100vw" clase="panel__foto" />
+          <div class="panel__texto">
+            <h3 class="panel__titulo">El Campo</h3>
+            <span class="panel__bajada">Materiales, equipamiento y soluciones para el trabajo rural. Maderas duras seleccionadas, herrería pesada y logística directa en campo.</span>
+            <span class="panel__accion enlace">Explorar El Campo <svg class="icono" aria-hidden="true"><use href="#i-flecha"/></svg></span>
+          </div>
+        </a>
+        <a class="panel" id="construccion" href="#catalogo-construccion" data-cursor="Ver">
+          <foto nombre="mundo-obra" alt="Obra en construcción con columnas de hormigón y armaduras de hierro" sizes="(min-width: 768px) 62vw, 100vw" clase="panel__foto" />
+          <div class="panel__texto">
+            <h3 class="panel__titulo">Construcción</h3>
+            <span class="panel__bajada">Materiales e insumos para cada etapa de obra. Del cimiento a los pisos atérmicos: hierros, cementos, mampostería y terminaciones.</span>
+            <span class="panel__accion enlace">Explorar Construcción <svg class="icono" aria-hidden="true"><use href="#i-flecha"/></svg></span>
+          </div>
+        </a>
+      </div>
+    </section>
+    </div>
+
+    <!-- ============ EL CAMPO ============ -->
+    <section class="campo superficie" id="campo-seccion" data-terreno="quebracho" aria-labelledby="titulo-campo">
+      <div class="campo__fijo" data-campo-fijo>
+        <div class="campo__riel" data-campo-riel>
+          <div class="campo__cabeza">
+            <h2 class="titulo-seccion" id="titulo-campo">El trabajo del campo exige soluciones reales.</h2>
+            <p class="bajada">Equipamiento e instalaciones rurales pensadas para responder a las necesidades de cada establecimiento, topografía y esquema de manejo ganadero en Olavarría y la región.</p>
+          </div>
+          <div class="galeria" data-galeria tabindex="0" role="region" aria-label="Galería de trabajos para el campo (deslizá para ver más)">
+            <ol class="galeria__pista">
+              <li class="lamina">
+                <div class="lamina__marco"><foto nombre="manga" alt="Manga de manejo con hacienda y corrales de concentración" sizes="(min-width: 768px) 46vw, 86vw" /></div>
+                <div class="lamina__texto">
+                  <h3>Mangas de manejo y corrales de concentración</h3>
+                  <ul class="rasgos">
+                    <li>Madera dura y acero</li>
+                    <!-- VALIDAR: "Garantía en obra" (claim comercial preexistente) -->
+                    <li>Garantía en obra</li>
+                    <!-- VALIDAR: "Ajuste milimétrico" (claim comercial preexistente) -->
+                    <li>Ajuste milimétrico y pernos calibrados</li>
+                  </ul>
+                </div>
+              </li>
+              <!-- Sin foto hasta tener una real (ver FOTOS-PENDIENTES.md): lámina tipográfica -->
+              <li class="lamina lamina--texto">
+                <div class="lamina__texto">
+                  <h3>Mangas de Hacienda y Cepos</h3>
+                  <p>Andenes antideslizantes, puertas de inspección rápida y cepos ergonómicos que resguardan la seguridad.</p>
+                </div>
+              </li>
+              <li class="lamina">
+                <div class="lamina__marco"><foto nombre="taller" alt="Soldador trabajando una estructura de acero en el taller" sizes="(min-width: 768px) 46vw, 86vw" /></div>
+                <div class="lamina__texto">
+                  <h3>Soldadura Pesada &amp; Chasis</h3>
+                  <p>Taller Propio</p>
+                </div>
+              </li>
+              <!-- Sin foto hasta tener una real (ver FOTOS-PENDIENTES.md): lámina tipográfica -->
+              <li class="lamina lamina--texto">
+                <div class="lamina__texto">
+                  <h3>Volteadores de Terneros</h3>
+                  <p>Geometría calibrada para curación, señalada y pesaje con mínimo estrés animal.</p>
+                </div>
+              </li>
+              <li class="lamina">
+                <div class="lamina__marco"><foto nombre="postes" alt="Pila de postes de quebracho colorado en el depósito" sizes="(min-width: 768px) 46vw, 86vw" /></div>
+                <div class="lamina__texto">
+                  <h3>Quebracho Colorado</h3>
+                  <p>Postes y Cepos</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="campo__cierre envoltura">
+          <a class="boton boton--senal magnetico" href="https://wa.me/5492284602193?text=Hola,%20quer%C3%ADa%20consultar%20por%20la%20fabricaci%C3%B3n%20de%20una%20instalaci%C3%B3n%20rural%20a%20medida." target="_blank" rel="noopener noreferrer">
+            <svg class="icono" aria-hidden="true"><use href="#i-wa"/></svg><span>Consultar fabricación a medida</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONSTRUCCIÓN ============ -->
+    <section class="obra superficie" id="catalogo-construccion" data-terreno="hormigon" data-solida aria-labelledby="titulo-obra">
+      <div class="envoltura obra__grilla">
+        <div class="obra__cabeza">
+          <h2 class="titulo-seccion" id="titulo-obra">Materiales para construir.</h2>
+          <p class="bajada">Todo lo necesario para acompañar cada etapa de tu obra. Desde las fundaciones de hormigón armado hasta los soláriums exteriores.</p>
+          <p class="obra__nota">Acopio directo · Despacho en Olavarría</p>
+        </div>
+
+        <!-- Las filas no llevan foto hasta tener fotos reales de cada material (ver FOTOS-PENDIENTES.md).
+             Para activarla: agregar data-foto="mat-xxx" en el <li> y la foto en scripts/imagenes.mjs -->
+        <ul class="filas" data-filas>
+          <li class="fila">
+            <h3 class="fila__cabeza">
+              <button class="fila__boton" type="button" aria-expanded="true" aria-controls="fila-hierros" id="b-hierros">
+                <span class="fila__nombre">Hierros y estructuras</span>
+                <!-- VALIDAR: "Normas IRAM" (claim comercial preexistente) -->
+                <span class="fila__sello">Normas IRAM</span>
+                <svg class="fila__mas" aria-hidden="true"><use href="#i-mas"/></svg>
+              </button>
+            </h3>
+            <div class="fila__detalle" id="fila-hierros" role="region" aria-labelledby="b-hierros">
+              <div class="fila__interior">
+                <!-- VALIDAR: "Mallas SIMA" (marca mencionada) -->
+                <p>Barras de acero conformado desde Ø6 hasta Ø25, alambre de fardo, mallas electrosoldadas SIMA y perfiles pesados para encofrados y losas.</p>
+                <div>
+                  <ul class="etiquetas"><li>Hierro Ø6 a Ø25</li><li>Mallas SIMA</li><li>Alambre fardo</li></ul>
+                  <a class="enlace fila__accion" href="https://wa.me/5492284602193?text=Hola,%20quisiera%20consultar%20por%20hierros%20y%20estructuras%20para%20obra." target="_blank" rel="noopener noreferrer">Consultar disponibilidad por WhatsApp <svg class="icono" aria-hidden="true"><use href="#i-flecha"/></svg></a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="fila">
+            <h3 class="fila__cabeza">
+              <button class="fila__boton" type="button" aria-expanded="true" aria-controls="fila-cementos" id="b-cementos">
+                <span class="fila__nombre">Cementos y mezclas</span>
+                <!-- VALIDAR: "Primeras marcas" (claim comercial preexistente) -->
+                <span class="fila__sello">Primeras Marcas</span>
+                <svg class="fila__mas" aria-hidden="true"><use href="#i-mas"/></svg>
+              </button>
+            </h3>
+            <div class="fila__detalle" id="fila-cementos" role="region" aria-labelledby="b-cementos">
+              <div class="fila__interior">
+                <!-- VALIDAR: "Loma Negra" (marca mencionada) -->
+                <p>Cemento Portland Loma Negra, cal aérea e hidráulica, pegamentos para porcelanato de alta adherencia y morteros impermeables.</p>
+                <div>
+                  <ul class="etiquetas"><li>Portland</li><li>Hidrófugos</li></ul>
+                  <a class="enlace fila__accion" href="https://wa.me/5492284602193?text=Hola,%20quisiera%20consultar%20por%20cemento,%20cal%20y%20adhesivos." target="_blank" rel="noopener noreferrer">Consultar por WhatsApp <svg class="icono" aria-hidden="true"><use href="#i-flecha"/></svg></a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="fila">
+            <h3 class="fila__cabeza">
+              <button class="fila__boton" type="button" aria-expanded="true" aria-controls="fila-mamposteria" id="b-mamposteria">
+                <span class="fila__nombre">Mampostería</span>
+                <span class="fila__sello">Cerámico &amp; Cemento</span>
+                <svg class="fila__mas" aria-hidden="true"><use href="#i-mas"/></svg>
+              </button>
+            </h3>
+            <div class="fila__detalle" id="fila-mamposteria" role="region" aria-labelledby="b-mamposteria">
+              <div class="fila__interior">
+                <p>Ladrillos cerámicos huecos (8, 12 y 18), bloques portantes cerámicos y ladrillos comunes seleccionados para cerramientos.</p>
+                <div>
+                  <ul class="etiquetas"><li>Pallets cerrados</li></ul>
+                  <a class="enlace fila__accion" href="https://wa.me/5492284602193?text=Hola,%20quisiera%20consultar%20por%20ladrillos%20y%20mamposter%C3%ADa." target="_blank" rel="noopener noreferrer">Cotizar por WhatsApp <svg class="icono" aria-hidden="true"><use href="#i-flecha"/></svg></a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="fila">
+            <h3 class="fila__cabeza">
+              <button class="fila__boton" type="button" aria-expanded="true" aria-controls="fila-pisos" id="b-pisos">
+                <span class="fila__nombre">Pisos y exteriores</span>
+                <span class="fila__sello">Atérmicos</span>
+                <svg class="fila__mas" aria-hidden="true"><use href="#i-mas"/></svg>
+              </button>
+            </h3>
+            <div class="fila__detalle" id="fila-pisos" role="region" aria-labelledby="b-pisos">
+              <div class="fila__interior">
+                <p>Losetas atérmicas antideslizantes, bordes ballena, esquineros y piezas de terminación para piscinas y galerías.</p>
+                <div>
+                  <ul class="etiquetas"><li>50x50 / Ballena</li></ul>
+                  <a class="enlace fila__accion" href="https://wa.me/5492284602193?text=Hola,%20quisiera%20consultar%20por%20pisos%20at%C3%A9rmicos%20y%20bordes%20de%20pileta." target="_blank" rel="noopener noreferrer">Cotizar por WhatsApp <svg class="icono" aria-hidden="true"><use href="#i-flecha"/></svg></a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <!-- VALIDAR: "acopio congelado en depósito" (condición comercial) -->
+        <div class="computo">
+          <div>
+            <h3 class="computo__titulo">¿Tenés el listado o cómputo métrico de tu obra?</h3>
+            <p>Envianos tu planilla de cálculo por WhatsApp y presupuestamos entrega por etapa o acopio congelado en depósito.</p>
+          </div>
+          <a class="boton boton--senal magnetico" href="https://wa.me/5492284602193?text=Hola,%20tengo%20un%20listado%20de%20materiales%20para%20cotizar%20por%20obra." target="_blank" rel="noopener noreferrer">
+            <svg class="icono" aria-hidden="true"><use href="#i-wa"/></svg><span>Enviar listado de obra</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Foto que sigue al cursor en las filas (se activa solo en filas con data-foto) -->
+    <div class="flotante" data-flotante aria-hidden="true"><img alt="" width="320" height="400"></div>
+
+    <!-- ============ EMPRESA ============ -->
+    <section class="empresa superficie" id="empresa" data-terreno="hormigon" aria-labelledby="titulo-empresa">
+      <div class="envoltura empresa__grilla">
+        <div class="empresa__texto">
+          <h2 class="titulo-seccion" id="titulo-empresa">De Olavarría, para quienes hacen.</h2>
+          <p class="bajada">El Quebracho reúne soluciones para el campo y la construcción, con presencia en Olavarría y atención personalizada a quienes buscan materiales confiables y equipamiento adaptado a sus proyectos.</p>
+          <div class="empresa__columnas">
+            <p>Nacimos entendiendo la realidad productiva de nuestra zona: donde la ganadería requiere corrales resistentes a la exigencia del rodeo y las obras edilicias demandan acopio exacto, logística sin demoras y materiales de primera calidad.</p>
+            <!-- VALIDAR: "entregas en tiempo y forma en toda la región centro bonaerense" (claim comercial) -->
+            <p>No somos un intermediario lejano. Nuestro equipo conoce el terreno, dialoga directamente con productores, arquitectos y constructores, y asegura entregas en tiempo y forma en toda la región centro bonaerense.</p>
+          </div>
+          <!-- VALIDAR: "Atención directa" (claim comercial preexistente) -->
+          <p class="empresa__cercania">Cercanía Local: Atención directa en mostrador por quienes conocen la tierra y la obra.</p>
+        </div>
+        <!-- Foto a su tamaño real como máximo (512 px de origen). Ver FOTOS-PENDIENTES.md -->
+        <figure class="empresa__foto">
+          <div class="marco-foto">
+            <foto nombre="deposito" alt="Vista aérea del depósito de El Quebracho con camión y autoelevadores" sizes="(min-width: 768px) 512px, 92vw" />
+          </div>
+          <figcaption class="empresa__pie">
+            <strong>Infraestructura de acopio continuo</strong>
+            <!-- VALIDAR: "Stock permanente" (claim comercial) -->
+            <span>Stock permanente de postes de quebracho, varillas, alambres, perfiles de hierro y cemento listo para despacho.</span>
+            <!-- VALIDAR: "Parque Industrial" (ubicación no verificada) -->
+            <span>Parque Industrial &amp; Circunvalación</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ SUCURSALES (incluye el cierre de contacto) ============ -->
+    <section class="sucursales superficie" id="sucursales" data-terreno="cal" aria-labelledby="titulo-sucursales">
+      <div class="envoltura">
+        <div class="sucursales__cabeza">
+          <h2 class="titulo-seccion" id="titulo-sucursales">Estamos cerca de tus proyectos.</h2>
+          <p class="bajada">Visitá nuestras dos sedes en la ciudad de Olavarría o comunicate con el equipo de ventas para coordinar despachos directos a tu campo u obra.</p>
+        </div>
+        <div class="sedes">
+          <article class="sede">
+            <h3 class="sede__nombre">Sucursal Circunvalación</h3>
+            <p class="sede__direccion">Circunvalación 1700</p>
+            <p class="sede__ciudad">Olavarría, Buenos Aires</p>
+            <dl class="sede__datos">
+              <div><dt><svg class="icono" aria-hidden="true"><use href="#i-tel"/></svg>Teléfono</dt><dd><a class="enlace" href="tel:+542284602193">02284 602193</a></dd></div>
+              <div><dt><svg class="icono" aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp</dt><dd><a class="enlace" href="https://wa.me/5492284633218" target="_blank" rel="noopener noreferrer">2284 633218</a> / <a class="enlace" href="https://wa.me/5492284602193" target="_blank" rel="noopener noreferrer">2284 602193</a></dd></div>
+              <div><dt><svg class="icono" aria-hidden="true"><use href="#i-reloj"/></svg>Horarios de atención</dt><dd>Lunes a Viernes: 07:30 a 16:00 hs<br>Sábados: 07:30 a 12:00 hs</dd></div>
+            </dl>
+            <div class="sede__acciones">
+              <a class="boton boton--oscuro" href="https://www.google.com/maps/search/?api=1&amp;query=El+Quebracho+Materiales+Rurales+Circunvalacion+1700+Olavarria" target="_blank" rel="noopener noreferrer"><svg class="icono" aria-hidden="true"><use href="#i-pin"/></svg><span>Cómo llegar</span></a>
+              <a class="boton boton--linea" href="https://wa.me/5492284602193?text=Hola,%20me%20comunico%20por%20la%20sucursal%20Circunvalaci%C3%B3n" target="_blank" rel="noopener noreferrer"><svg class="icono" aria-hidden="true"><use href="#i-wa"/></svg><span>WhatsApp</span></a>
+            </div>
+          </article>
+          <article class="sede">
+            <h3 class="sede__nombre">Sucursal Pellegrini</h3>
+            <p class="sede__direccion">Pellegrini 2860</p>
+            <p class="sede__ciudad">Olavarría, Buenos Aires</p>
+            <dl class="sede__datos">
+              <div><dt><svg class="icono" aria-hidden="true"><use href="#i-tel"/></svg>Teléfono</dt><dd><a class="enlace" href="tel:+542284633218">02284 633218</a> / <a class="enlace" href="tel:+542284602193">02284 602193</a></dd></div>
+              <div><dt><svg class="icono" aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp</dt><dd><a class="enlace" href="https://wa.me/5492284633218" target="_blank" rel="noopener noreferrer">2284 633218</a> / <a class="enlace" href="https://wa.me/5492284602193" target="_blank" rel="noopener noreferrer">2284 602193</a></dd></div>
+              <div><dt><svg class="icono" aria-hidden="true"><use href="#i-reloj"/></svg>Horarios de atención</dt><dd>Lunes a Viernes: 07:30 a 16:00 hs<br>Sábados: 07:30 a 12:00 hs</dd></div>
+            </dl>
+            <div class="sede__acciones">
+              <a class="boton boton--oscuro" href="https://www.google.com/maps/search/?api=1&amp;query=El+Quebracho+Materiales+Rurales+Pellegrini+2860+Olavarria" target="_blank" rel="noopener noreferrer"><svg class="icono" aria-hidden="true"><use href="#i-pin"/></svg><span>Cómo llegar</span></a>
+              <a class="boton boton--linea" href="https://wa.me/5492284633218?text=Hola,%20me%20comunico%20por%20la%20sucursal%20Pellegrini" target="_blank" rel="noopener noreferrer"><svg class="icono" aria-hidden="true"><use href="#i-wa"/></svg><span>WhatsApp</span></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Cierre de contacto: acción principal de WhatsApp dentro de Sucursales -->
+        <!-- VALIDAR: "traslados de hacienda" y "toda la provincia" (servicio y alcance no verificados) -->
+        <div class="contacto" id="contacto-final">
+          <div class="contacto__texto">
+            <h3 class="contacto__titulo">¿Qué necesitás para tu próximo proyecto?</h3>
+            <p>Contactanos y conversemos. Asesoramos en materiales rurales, fabricación de mangas, estructuras de obra y traslados de hacienda en Olavarría y toda la provincia.</p>
+          </div>
+          <div class="acciones">
+            <a class="boton boton--senal boton--grande magnetico" href="https://wa.me/5492284602193?text=Hola,%20quer%C3%ADa%20consultar%20por%20un%20proyecto%20para%20el%20campo%20o%20construcci%C3%B3n." target="_blank" rel="noopener noreferrer">
+              <svg class="icono" aria-hidden="true"><use href="#i-wa"/></svg><span>Hablar por WhatsApp</span>
+            </a>
+            <a class="boton boton--linea-clara" href="https://www.instagram.com/elquebracho.materialesrurales/" target="_blank" rel="noopener noreferrer">
+              <svg class="icono" aria-hidden="true"><use href="#i-ig"/></svg><span>Instagram</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="envoltura pie__fila">
+      <a class="marca" href="#inicio" aria-label="El Quebracho, volver al inicio">
+        <svg class="marca__icono" aria-hidden="true"><use href="#i-arbol"/></svg>
+        <span class="marca__nombre">El Quebracho</span>
+      </a>
+      <nav aria-label="Pie de página">
+        <ul class="pie__lista">
+          <li><a class="enlace" href="#campo-seccion">El Campo</a></li>
+          <li><a class="enlace" href="#catalogo-construccion">Construcción</a></li>
+          <li><a class="enlace" href="#empresa">Empresa</a></li>
+          <li><a class="enlace" href="#sucursales">Sucursales</a></li>
+        </ul>
+      </nav>
+      <div class="pie__redes">
+        <a class="boton-icono" href="https://wa.me/5492284602193" target="_blank" rel="noopener noreferrer"><svg class="icono" aria-hidden="true"><use href="#i-wa"/></svg><span class="sr">WhatsApp</span></a>
+        <a class="boton-icono" href="https://www.instagram.com/elquebracho.materialesrurales/" target="_blank" rel="noopener noreferrer"><svg class="icono" aria-hidden="true"><use href="#i-ig"/></svg><span class="sr">Instagram</span></a>
+        <a class="boton-icono" href="https://www.google.com/maps/search/?api=1&amp;query=El+Quebracho+Materiales+Rurales+Circunvalacion+1700+Olavarria" target="_blank" rel="noopener noreferrer"><svg class="icono" aria-hidden="true"><use href="#i-pin"/></svg><span class="sr">Ubicación en el mapa</span></a>
+      </div>
+    </div>
+    <div class="envoltura pie__base">
+      <p>© <span data-anio>2026</span> EL QUEBRACHO. Todos los derechos reservados. Olavarría, Buenos Aires, Argentina.</p>
+    </div>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp (solo celular) -->
+  <a class="fab" data-fab href="https://wa.me/5492284633218?text=Hola,%20quisiera%20consultar%20stock%20y%20precios" target="_blank" rel="noopener noreferrer">
+    <svg class="icono" aria-hidden="true"><use href="#i-wa"/></svg><span class="sr">Consultar stock por WhatsApp</span>
+  </a>
+
+  <!-- Cursor "Ver" (solo mouse) -->
+  <div class="cursor" data-cursor-el aria-hidden="true"><span>Ver</span></div>
+</body>
+</html>
