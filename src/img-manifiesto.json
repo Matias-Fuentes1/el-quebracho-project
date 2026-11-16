@@ -1,0 +1,131 @@
+{
+  "inicio": {
+    "ratio": [
+      16,
+      9
+    ],
+    "anchos": [
+      800,
+      1280,
+      1920
+    ],
+    "movil": true
+  },
+  "mundo-campo": {
+    "ratio": [
+      1280,
+      720
+    ],
+    "anchos": [
+      640,
+      960,
+      1440
+    ],
+    "movil": true
+  },
+  "mundo-obra": {
+    "ratio": [
+      1408,
+      768
+    ],
+    "anchos": [
+      640,
+      960,
+      1440
+    ],
+    "movil": true
+  },
+  "manga": {
+    "ratio": [
+      1600,
+      1068
+    ],
+    "anchos": [
+      640,
+      960,
+      1440
+    ],
+    "movil": true
+  },
+  "taller": {
+    "ratio": [
+      566,
+      517
+    ],
+    "anchos": [
+      640,
+      960,
+      1440
+    ],
+    "movil": true
+  },
+  "postes": {
+    "ratio": [
+      800,
+      600
+    ],
+    "anchos": [
+      640,
+      960,
+      1440
+    ],
+    "movil": true
+  },
+  "deposito": {
+    "ratio": [
+      1376,
+      768
+    ],
+    "anchos": [
+      640,
+      960,
+      1376
+    ],
+    "movil": false
+  },
+  "mat-cementos": {
+    "ratio": [
+      4,
+      5
+    ],
+    "anchos": [
+      320,
+      480,
+      640
+    ],
+    "movil": false
+  },
+  "mat-hierros": {
+    "ratio": [
+      4,
+      5
+    ],
+    "anchos": [
+      320,
+      480
+    ],
+    "movil": false
+  },
+  "mat-mamposteria": {
+    "ratio": [
+      4,
+      5
+    ],
+    "anchos": [
+      320,
+      480
+    ],
+    "movil": false
+  },
+  "mat-pisos": {
+    "ratio": [
+      4,
+      5
+    ],
+    "anchos": [
+      320,
+      480
+    ],
+    "movil": false
+  }
+}
