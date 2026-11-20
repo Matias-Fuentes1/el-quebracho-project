@@ -307,6 +307,22 @@
   .campo__cierre { width: 100%; margin: 2.5rem auto 0; }
 }
 
+/* En notebook se conserva el mismo avance horizontal de escritorio, con tarjetas
+   más bajas para que el recorrido completo entre en la altura visible. */
+@media (min-width: 768px) and (max-width: 1439px), (min-width: 1440px) and (max-height: 819px) {
+  .galeria-fijada .campo__fijo { height: 100svh; display: flex; overflow: hidden; gap: 1rem; padding-top: calc(var(--estrato) + .75rem); padding-bottom: 1rem; }
+  .galeria-fijada .campo__riel { display: flex; gap: clamp(2rem, 3vw, 3rem); width: max-content; padding-inline: var(--gutter) 10vw; }
+  .galeria-fijada .campo__cabeza { display: block; width: clamp(22rem, 32vw, 30rem); margin: 0; padding: 0; }
+  .galeria-fijada .campo__cabeza .bajada { font-size: clamp(.9375rem, 1.1vw, 1rem); line-height: 1.5; }
+  .galeria-fijada .galeria { overflow: visible; padding: 0; }
+  .galeria-fijada .galeria__pista { display: flex; grid-template-columns: none; gap: clamp(2rem, 3vw, 3rem); width: max-content; }
+  .galeria-fijada .lamina { width: min(52vw, calc((100svh - 23rem) * 4 / 3)); }
+  .galeria-fijada .lamina__marco { aspect-ratio: 16 / 10; }
+  .galeria-fijada .lamina__texto { gap: clamp(1rem, 1.5vw, 1.5rem); }
+  .galeria-fijada .lamina--texto { width: min(22rem, 31vw); min-height: 0; padding: clamp(1.25rem, 2vw, 1.75rem); }
+  .galeria-fijada .campo__cierre { width: 100%; margin: 0; flex: none; }
+}
+
 /* ------------------------------------------------------------------ CONSTRUCCIÓN
    Composición: columna de título fija (sticky) a la izquierda, filas a la derecha. */
 .obra { padding-block: var(--seccion) 4rem; color: var(--color-tierra); }

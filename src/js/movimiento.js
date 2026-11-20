@@ -23,7 +23,7 @@ const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 const html = document.documentElement;
 
 const Q = {
-  escritorio: '(min-width: 1440px) and (min-height: 820px) and (prefers-reduced-motion: no-preference)',
+  escritorio: '(min-width: 768px) and (prefers-reduced-motion: no-preference)',
   movil: '(max-width: 767px) and (prefers-reduced-motion: no-preference)',
   reducido: '(prefers-reduced-motion: reduce)',
   mouse: '(hover: hover) and (pointer: fine) and (min-width: 768px) and (prefers-reduced-motion: no-preference)',
@@ -202,7 +202,7 @@ function galeriaFijada() {
     scrollTrigger: { trigger: fijo, start: 'top top', end: () => '+=' + distancia(), pin: true, scrub: 0.3, invalidateOnRefresh: true, anticipatePin: 1, refreshPriority: 1 },
   });
   // Profundidad: cada foto gira levemente y se endereza al pasar por el centro
-  $$('.lamina').forEach((lam) => {
+  if (matchMedia('(min-width: 1440px) and (min-height: 820px)').matches) $$('.lamina').forEach((lam) => {
     const marco = $('.lamina__marco', lam);
     if (!marco) return; // láminas tipográficas (sin foto): no tienen marco que girar
     gsap.fromTo(marco,
