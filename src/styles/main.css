@@ -284,6 +284,29 @@
 .galeria-fijada .lamina--texto { width: 22rem; align-self: stretch; }
 .galeria-fijada .campo__cierre { margin: 0; flex: none; }
 
+/* Notebook: tarjetas en una grilla estable para que fotos y textos queden juntos
+   y el CTA no se recorte con la altura habitual de pantalla. */
+@media (min-width: 1024px) and (max-width: 1439px), (min-width: 1440px) and (max-height: 819px) {
+  .campo { padding-block: calc(var(--estrato) + var(--seccion)) var(--seccion); }
+  .campo__fijo { height: auto; display: block; overflow: visible; padding: 0; }
+  .campo__riel { display: block; width: auto; padding: 0; }
+  .campo__cabeza {
+    display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); align-items: end;
+    gap: clamp(1.5rem, 4vw, 4rem); width: auto; max-width: none;
+    margin: 0 var(--gutter) clamp(2rem, 4vw, 3.5rem); padding: 0;
+  }
+  .campo__cabeza .bajada { max-width: 42ch; }
+  .galeria { overflow: visible; padding-inline: var(--gutter); }
+  .galeria__pista { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(1.5rem, 2.5vw, 2.5rem); width: auto; }
+  .lamina { width: auto; min-width: 0; }
+  .lamina__marco { aspect-ratio: 16 / 10; }
+  .lamina__texto { grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: clamp(1rem, 2vw, 2rem); }
+  .lamina--texto { width: auto; min-height: 26rem; padding: clamp(1.5rem, 2.5vw, 2.25rem); }
+  .lamina--texto .lamina__texto { display: block; margin-top: auto; }
+  .lamina--texto .lamina__texto p { margin-top: 1rem; }
+  .campo__cierre { width: 100%; margin: 2.5rem auto 0; }
+}
+
 /* ------------------------------------------------------------------ CONSTRUCCIÓN
    Composición: columna de título fija (sticky) a la izquierda, filas a la derecha. */
 .obra { padding-block: var(--seccion) 4rem; color: var(--color-tierra); }

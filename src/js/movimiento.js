@@ -23,7 +23,7 @@ const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 const html = document.documentElement;
 
 const Q = {
-  escritorio: '(min-width: 768px) and (prefers-reduced-motion: no-preference)',
+  escritorio: '(min-width: 1440px) and (min-height: 820px) and (prefers-reduced-motion: no-preference)',
   movil: '(max-width: 767px) and (prefers-reduced-motion: no-preference)',
   reducido: '(prefers-reduced-motion: reduce)',
   mouse: '(hover: hover) and (pointer: fine) and (min-width: 768px) and (prefers-reduced-motion: no-preference)',
